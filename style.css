@@ -1,0 +1,135 @@
+@import url(./assets/styles/fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: IranYekan;
+    list-style: none;
+}
+
+/* Variables */
+:root{
+    --primaryColor:#6d28d9;
+    --secondaryColor:#ede9fe;
+    --mainBlack:#222;
+    --mainWhite:#fff;
+    --mainGrey:#7c7c7c;
+    --mainRed:#db2777;
+    --bodyColor:#f6f6f6;
+    --mainSpacing:1rem;
+    --mainTransition:all 0.3s linear;
+}
+body{
+    font-family: IranYekan;
+    color: var(--mainBlack);
+    background-color: var(--bodyColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    display: flex;
+}
+form{
+    width: 25rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    flex: 1;
+}
+select{
+    margin-left: 0rem;
+}
+.todo{
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    margin: 0.3rem 0;
+}
+form input , form button{
+    border: none;
+    outline: none;
+}
+.todo li{
+    font-weight: bold;
+    flex: 1;
+}
+.todo span{
+    margin-left: 0.2rem;
+}
+form button{
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    transition: all 0.3ms ease;
+}
+form button :hover{
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: solid 1px var(--primaryColor);
+}
+i{
+    cursor: pointer;
+    background-color:var(--secondaryColor);
+    color: var(--primaryColor);  
+}
+.fa-trash-can{
+    color: var(--mainRed);
+}
+.fa-circle-check{
+    color: green;
+}
+.fa-star{
+    color: gold;
+}
+.fa-pen-to-square{
+    color: darkblue;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.important{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    
+}
+select{
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    color: var(--primaryColor);
+    background-color: #fff;
+}
+.select{
+    background-color: #fff;
+    margin-left: 1rem;
+    width: 10rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:1rem;
+    color: var(--primaryColor);
+    pointer-events: none;
+}

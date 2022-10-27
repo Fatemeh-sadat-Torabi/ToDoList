@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+       <header>
+        <h1>To Do List</h1>
+       </header> 
+       <section class="container">
+        <div class="form-container">
+            <form action="">
+                <input type="text" class="input-todo">
+                <button class="button-todo" type="submit">
+                    <i class="fa-regular fa-square-plus"></i>
+                </button>
+            </form>
+            <div class="select">
+                <select class="filter-todos" name="todos">
+                    <option class="completed" value="Completed">Completed</option>
+                    <option class="uncompleted" value="Un-completed">Un-completed</option>
+                    <option class="all" value="All">All</option>
+                    <option class="important" value="Important">Important</option>
+                </select>
+            </div>
+       </div>
+       <div class="todosContainer">
+            <!-- <div class="todo">
+                <li>
+                       Task 1
+                </li>
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-trash-can"></i>
+                </span>
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                </span>
+            </div> -->
+            
+       </div>
+       </section>
+       <script src="./index.js"></script>
+    </body>
+</html>
